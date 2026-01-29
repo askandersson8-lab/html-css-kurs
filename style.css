@@ -1,0 +1,279 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body.page {
+  max-width: 1100px; 
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+  background: #b34545;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+}
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 240px; 
+  gap: 16px;
+}
+
+
+.map-box iframe {
+  width: 100%;
+  height: 280px;
+  border: 0;
+}
+
+.filter-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 12px 0;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.card-img {
+  width: 140px;
+  height: 120px;
+  object-fit: cover;
+}
+.card-text h3 { margin: 0 0 6px; }
+.card-text a { text-decoration: none; }
+
+.maplink {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+.sidebar .ad {
+  display: block;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+.sidebar .ad img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { order: 2; }
+}
+.ad-box {
+  position: relative;
+}
+
+.ad-box img {
+  width: 100%;
+  display: block;
+}
+
+.ad-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 6px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.object-image img {
+  width: 100%;
+  height: auto;
+}
+
+.object-info {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.object-info ul {
+  padding-left: 20px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.object-description {
+  grid-column: 1 / -1;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+.other-cars {
+  margin-top: 40px;
+}
+
+.car-list {
+  display: flex;
+  gap: 20px;
+}
+
+.car-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+}
+
+.car-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+  border: 1px solid #ccc;
+  padding: 14px;
+  background: white;
+}
+
+.card-img {
+  width: 160px;
+  height: 110px;
+  object-fit: cover;
+}
+
+.card-text h3 {
+  margin: 0 0 6px;
+}
+html, body {
+  height: 100%;
+}
+
+.page {
+  margin: 0;
+}
+
+.car {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.car__info {
+  flex: 0 0 320px; 
+  max-width: 360px;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.car {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.car__media {
+  flex: 1;
+}
+
+.car__media img {
+  width: 100%;
+  height: 420px;    
+  object-fit: cover;
+  display: block;
+}
+
+.car__info {
+  flex: 0 0 320px;
+  border-left: 1px solid #e6e6e6;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+.main h2 {
+  margin-top: 0;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+form button {
+  background-color: #b44545;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #933737;
+}

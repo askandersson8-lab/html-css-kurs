@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - Nordvik Motors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <img src="images/bil1.jpg" alt="Ask Auto logotyp" class="logo">
+    <h1>Nordvik Motors</h1>
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">Start</a>
+    <a href="objekt.html">Bilar till salu</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <div class="layout">
+    <main class="main">
+
+      <h2>Kontakt</h2>
+      <p>
+        Välkommen till <strong>Nordvik Motors</strong>. Här hittar du våra kontaktuppgifter.
+        Vi svarar normalt inom <em>24 timmar</em>.
+      </p>
+
+      <section class="card" style="display:block;">
+        <h3>Kontaktuppgifter</h3>
+        <p><strong>Adress:</strong> Universitetsgatan 2, 651 88 Karlstad</p>
+        <p><strong>Telefon:</strong> 054-12 34 56</p>
+        <p><strong>E-post:</strong> <a href="mailto:info@askauto.se">info@nordvikmotors.se</a></p>
+      </section>
+
+      <section class="card" style="display:block;">
+        <h3>Öppettider</h3>
+        <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%;">
+          <thead>
+            <tr>
+              <th>Dag</th>
+              <th>Öppet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Måndag</td><td>10:00 - 18:00</td></tr>
+            <tr><td>Tisdag</td><td>10:00 - 18:00</td></tr>
+            <tr><td>Onsdag</td><td>10:00 - 18:00</td></tr>
+            <tr><td>Torsdag</td><td>10:00 - 18:00</td></tr>
+            <tr><td>Fredag</td><td>10:00 - 17:00</td></tr>
+            <tr><td>Lördag</td><td>11:00 - 14:00</td></tr>
+            <tr><td>Söndag</td><td>Stängt</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card" style="display:block;">
+        <h3>Skicka ett meddelande</h3>
+        <form>
+          <p>
+            <label for="name"><strong>Namn:</strong></label><br>
+            <input id="name" name="name" type="text" placeholder="Ditt namn" style="width:100%; padding:10px;">
+          </p>
+
+          <p>
+            <label for="email"><strong>E-post:</strong></label><br>
+            <input id="email" name="email" type="email" placeholder="namn@mail.se" style="width:100%; padding:10px;">
+          </p>
+
+          <p>
+            <label for="topic"><strong>Ämne:</strong></label><br>
+            <select id="topic" name="topic" style="width:100%; padding:10px;">
+              <option>Fråga om bil</option>
+              <option>Boka visning</option>
+              <option>Inbyte</option>
+              <option>Övrigt</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message"><strong>Meddelande:</strong></label><br>
+            <textarea id="message" name="message" rows="6" placeholder="Skriv ditt meddelande..." style="width:100%; padding:10px;"></textarea>
+          </p>
+
+          <p>
+            <button type="submit" style="padding:10px 14px; cursor:pointer;">Skicka</button>
+          </p>
+        </form>
+      </section>
+
+      <section class="map-box">
+        <h3>Hitta hit</h3>
+        <iframe
+          src="https://www.google.com/maps?q=Karlstad&output=embed"
+          loading="lazy"
+          style="width:100%; height:280px; border:0;"
+          allowfullscreen>
+        </iframe>
+      </section>
+
+    </main>
+
+    <aside class="sidebar">
+      <a class="ad" href="https://www.momondo.se/" target="_blank" rel="noopener">
+        <div class="ad-box">
+          <img src="images/Momondo.png" alt="Reklam 1">
+          <div class="ad-text">Billiga flygresor</div>
+        </div>
+      </a>
+
+      <a class="ad" href="https://www.kau.se//" target="_blank" rel="noopener">
+        <div class="ad-box">
+          <img src="images/UNI.webp" alt="Karlstad universitet">
+          <div class="ad-text">Karlstad universitet</div>
+        </div>
+      </a>
+    </aside>
+  </div>
+
+</body>
+</html>
