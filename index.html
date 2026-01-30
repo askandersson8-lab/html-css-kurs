@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nordvik Motors</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="page">
 
@@ -23,24 +23,25 @@
 
     <div class="layout">
       <main class="main">
-        <section class="map-box">
+        <div class="map-box">
           <iframe
             src="https://www.google.com/maps?q=Karlstad&output=embed"
             loading="lazy"
             allowfullscreen
           ></iframe>
-        </section>
+        </div>
+          
 
         <section class="filter-box">
-          Sortering: pris, område, dagar till salu, osv.
+          <h2 class="text1">Bilar till salu</h2>
         </section>
 
-        <section class="list">
+        <div class="list">
           <article class="card">
             <img src="images/Volvo.jpg" alt="Bil 1" class="card-img">
             <div class="card-text">
               <h3><a href="objekt.html">Volvo XC60</a></h3>
-              <p>Volvo XC60 till salu</p>
+              <strong>Volvo XC60 till salu</strong>
               <p>Pris: 210 000 kr</p>
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
             </div>
@@ -50,9 +51,9 @@
             <img src="images/Audi.jpg" alt="Bil 2" class="card-img">
             <div class="card-text">
               <h3><a href="objekt.html">Audi A4</a></h3>
-              <p>Audi A4 till salu
-               <p>Pris: 246 000 kr</p> 
-              </p>
+              <strong>Audi A4 till salu</strong>
+              <p>Pris: 246 000 kr</p> 
+              
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
             </div>
           </article>
@@ -61,15 +62,15 @@
             <img src="images/BMW.jpg" alt="Bil 3" class="card-img">
             <div class="card-text">
               <h3><a href="objekt.html">BMW 320d</a></h3>
-              <p>BMW 320d till salu.</p>
+              <strong>BMW 320d till salu</strong>
               <p>Pris: 234 000 kr</p>
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
             </div>
           </article>
-        </section>
+        </div>
       </main>
-
-      <aside class="sidebar">
+    
+      
         <aside class="sidebar">
 
   <a class="ad" href="https://www.momondo.se" target="_blank">
@@ -87,9 +88,7 @@
   </a>
 
 </aside>
-    </div>
-
-  </div>
-
+   
+</div>
 </body>
 </html>
