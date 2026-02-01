@@ -1,9 +1,71 @@
-.header
+/*Universalt för alla sidor*/
+    .universal {
+        font-family:Arial, Helvetica, sans-serif;
+        display: block;
+        width: 40%;
+        margin-left: 30%;
+    }
+    .navMeny {
+        background-color: #b34545;
+        padding: 1%;
+    }
+    .navMeny a {
+        text-decoration: none;
+        color: black;
+        margin-right: 1%;
+        font-weight: bold;
+        font-size: large;
+    }
+    header{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-top: 10px;
+    }
+
+
+/*Utilities*/
+    .box {
+        border: 2px solid lightgray;
+        padding-left: 1%;
+        padding-bottom: 2%;
+        width: 75%;
+        margin-bottom: 2%;
+    }
+
+    .reklam img{
+        width: 25%;
+    }
+
+/*Index*/
+
+    .fordon h2 {
+        background-color: #b34545;
+        padding: 1%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 75%;
+    }
+
+    .cards > .box > img{
+        padding-top: 1%;
+        width: 40%;      
+    }
+
+    .card-text {
+        width: 40%;
+    }
+
+    .maplink {
+        color: blue;
+    }
+/*Objektsida*/
+
+    .header
 {
     display: flex;
     align-items: center;
     gap: 18px;
-    padding-left: 100px;
     padding-top: 10px;
 
 }
@@ -12,10 +74,7 @@
     width: 70px;
     height: auto;
 }
-body
-{
-    font-family: Arial, sans-serif;
-}
+
 a
 {
     text-decoration: none;
@@ -41,7 +100,7 @@ a
     display: flex;
     gap: 24px;
     align-items: flex-start;
-    padding-left: 150px;
+    padding-left: 10%;
     margin-top: 25px;
 }
 .car_img img
@@ -54,4 +113,40 @@ a
 {
     padding-top: 20px;
     padding-left: 15px;
+    border: 2px solid lightgray;
+    width: 20%;
 }
+.frame{
+    border: 2px solid lightgray;
+        padding-left: 1%;
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+}
+
+
+/*Kontaktsida*/
+
+    /*Tabellen*/
+    .kontaktTabell{
+        width: 90%;
+        margin-left: 5%;
+        font-size: larger;
+    }
+    td{
+        border: 1px solid black;
+        padding: 0.5%;
+    }
+
+    /*Formulärelementet*/
+    .kontaktForm div{
+        padding-bottom: 1.5%;
+    }
+    .kontaktForm input, select, textarea {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    /*Karta*/
+    iframe{
+        width: 75%;
+    }

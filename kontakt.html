@@ -1,124 +1,113 @@
-<!DOCTYPE html> <!--Grundstrukturen av koden och språk anges-->
-<html lang="sv">
-<head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Kontakt - Nordvik Motors</title>
-  <link rel="stylesheet" href="styles/style.css" >
-</head>
-
-<body class="page">
-
-  <header class="header"> <!--Logotypen anges-->
-    <img src="images/bil1.jpg" alt="Ask Auto logotyp" class="logo">
-    <h1>Nordvik Motors</h1>
-  </header>
-
-  <nav class="menu"> <!--Här anges menyn, man får välja mellan start, bilar till salu och kontakt-->
-    <a href="index.html">Start</a>
-    <a href="objekt.html">Bilar till salu</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-
-  <div class="layout">
-    <main class="main">
-
-      <h2 class="test">Kontakt</h2>
-      <p>
-        Välkommen till <strong>Nordvik Motors</strong>. Här hittar du våra kontaktuppgifter. <!--Kontaktinformation för Nordvik Motors-->
-        Vi svarar normalt inom <em>24 timmar</em>.
-      </p>
-
-      <section class="card" style="display:block;">  <!--Tabell för öppetider-->
-        <h3>Kontaktuppgifter</h3>
-        <p><strong>Adress:</strong> Universitetsgatan 2, 651 88 Karlstad</p>
-        <p><strong>Telefon:</strong> 054-12 34 56</p>
-        <p><strong>E-post:</strong> <a href="mailto:info@askauto.se">info@nordvikmotors.se</a></p>
-      </section>
-
-      <section class="card" style="display:block;">
-        <h3>Öppettider</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Dag</th>
-              <th>Öppet</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Måndag</td><td>10:00 - 18:00</td></tr>
-            <tr><td>Tisdag</td><td>10:00 - 18:00</td></tr>
-            <tr><td>Onsdag</td><td>10:00 - 18:00</td></tr>
-            <tr><td>Torsdag</td><td>10:00 - 18:00</td></tr>
-            <tr><td>Fredag</td><td>10:00 - 17:00</td></tr>
-            <tr><td>Lördag</td><td>11:00 - 14:00</td></tr>
-            <tr><td>Söndag</td><td>Stängt</td></tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section class="card" style="display:block;"> <!--Kontaktformulär med fält för namn, e-post och ärende-->
-        <h3>Skicka ett meddelande</h3>
-        <form>
-          <p>
-            <label for="name"><strong>Namn:</strong></label><br>
-            <input id="name" name="name" type="text" placeholder="Ditt namn" style="width:100%; padding:10px;">
-          </p>
-
-          <p>
-            <label for="email"><strong>E-post:</strong></label><br>
-            <input id="email" name="email" type="email" placeholder="namn@mail.se" style="width:100%; padding:10px;">
-          </p>
-
-          <p>
-            <label for="topic"><strong>Ämne:</strong></label><br>
-            <select id="topic" name="topic" style="width:100%; padding:10px;">
-              <option>Fråga om bil</option>
-              <option>Boka visning</option>
-              <option>Inbyte</option>
-              <option>Övrigt</option>
-            </select>
-          </p>
-
-          <p>
-            <label for="message"><strong>Meddelande:</strong></label><br>
-            <textarea id="message" name="message" rows="6" placeholder="Skriv ditt meddelande..." style="width:100%; padding:10px;"></textarea>
-          </p>
-
-          <p>
-            <button type="submit" style="padding:10px 14px; cursor:pointer;">Skicka</button>
-          </p>
-        </form>
-      </section>
-
-      <section class="map-box"> <!--Karta-->
-        <h3>Hitta hit</h3>
-        <iframe
-          src="https://www.google.com/maps?q=Karlstad&output=embed"
-          loading="lazy"
-          style="width:100%; height:280px; border:0;"
-          allowfullscreen>
-        </iframe>
-      </section>
-
-    </main>
-
-    <aside class="sidebar"> <!--Klickbar bild som tar användaren till en annan hemsida-->
-      <a class="ad" href="https://www.momondo.se/" target="_blank" rel="noopener">
-        <div class="ad-box">
-          <img src="images/Momondo.png" alt="Reklam 1">
-          <div class="ad-text">Billiga flygresor</div>
+<!DOCTYPE html>
+<html lang ="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Kontakt" content="Information och metoder för at kontakta oss">
+        <link href="style.css" rel="stylesheet">
+        <title>Nordvik Motors - Kontakt</title>
+    </head>
+    <body class="universal"> <!--Hela sidokroppen. Klassen refererar till alla sidors universella fonts etc.-->
+        <header> <!-- Header med logotyp och rubrik-->
+            <img src="images/Logo.jpg" alt="Nordvik Motors Logotyp" class="logo">
+            <h1>Nordvik Motors</h1>
+        </header>
+        <nav class="navMeny"> <!--Navigeringsmeny för interna länkar-->
+            <a href="index.html">Start</a>
+            <a href="objekt.html">Bilar till salu</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <div class="banner"> <!--Hemsidans banner. Information om vad som finns på denna sida specifikt-->
+            <h2>Kontakt</h2>
+            <p>Välkommen till <strong>Nordvik Motors</strong>. Här hittar du våra kontaktuppgifter. Vi svarar normalt inom <i>24 timmar</i>.</p>
         </div>
-      </a>
-
-      <a class="ad" href="https://www.kau.se//" target="_blank" rel="noopener"> <!--Klickbar bild till som tar användaren till en annan hemsida-->
-        <div class="ad-box">
-          <img src="images/UNI.webp" alt="Karlstad universitet">
-          <div class="ad-text">Karlstad universitet</div>
+        <div class="box"> <!--Kontaktuppgifter til Nordvik Motors-->
+            <h2>Kontaktuppgifter</h2>
+            <p><b>Adress:</b> Universitetsgatan 2, 651 88 Karlstad</p>
+            <p><b>Telefon:</b> <i>054-12 34 56</i></p>
+            <p><b>E-post:</b> <a href="mailto:info@nordvikmotors.se">info@nordvikmotors.se</a></p>
         </div>
-      </a>
-    </aside>
-  </div>
+        <div class="box"> <!--Tabell med öppettider-->
+            <table class="kontaktTabell">
+                <h2>Öppettider</h2>
+                    <tr>
+                        <th>Dag</th>
+                        <th>Öppettider</th>
+                    </tr>
+                    <tr>
+                        <td>Måndag</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Tisdag</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Onsdag</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Torsdag</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Fredag</td>
+                        <td>10:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Lördag</td>
+                        <td>11:00 - 14:00</td>
+                    </tr>
+                    <tr>
+                        <td>Söndag</td>
+                        <td>Stängt</td>
+                    </tr>
+            </table>
+        </div>
+        <div class="box"> <!--Formulärelement för att skicka ett meddelande till vår mail från vår hemsida (Informationen skickas ingenstans för tillfället)-->
+            <h2>Skicka ett meddelande</h2>
+            <form class="kontaktForm">
+                <div>
+                    <label for="namn"><b>Namn:</b></label><br>
+                    <input type="text" id="namn" placeholder="Ditt namn" required>
+                </div>
+                <div>
+                    <label for="epost"><b>E-post:</b></label><br>
+                    <input type="email" id="epost" placeholder="namn@epost.se" required>
+                </div>
+                <div>
+                    <label for="aemne"><b>Ämne:</b></label><br>
+                    <select id="aemne">
+                        <option value="frågor om bilar">Frågor om bilar</option>
+                        <option value="boka visning">Boka visning</option>
+                        <option value="inbyte">Inbyte</option>
+                        <option value="övrigt">Övrigt</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="meddelande"><b>Meddelande:</b></label><br>
+                    <textarea rows="5" cols="50" id="meddelande" placeholder="Skriv in din text här..." required></textarea>
+                </div>
+                <input type="submit" value="Skicka">
+            </form>
+        </div>
+        <div> <!--Karta-->
+            <h2>Hitta hit</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.6422833050287!2d13.579333477349788!3d59.40568040490667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x7e3c2a0b0a57d2ac!2sUniversitetsgatan%202%2C%20651%2088%2C%20651%2088%20Karlstad!5e0!3m2!1ssv!2sse!4v1769911729182!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <aside class="reklambilder">
+            <a class="Reklam" href="https://www.momondo.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
+            <div class="reklam">
+                <img src="images/SAS.jpg" alt="Flygresor">
+                <div class="text">Billiga flygresor</div>
+            </div>
+            </a>
 
-</body>
+            <a class="Reklam" href="https://www.kau.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
+            <div class="reklam">
+                <img src="images/UNI.jpg" alt="Karlstad universitet">
+                <div class="text">Karlstad universitet</div>
+            </div>
+            </a>
+        </aside>
+    </body>
 </html>

@@ -4,26 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nordvik Motors</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="page">
 
-  
+<body class="universal">
 
-    <header class="header"> <!--Logotypen anges-->
-      <img src="images/bil1.jpg" alt="Ask Auto logotyp" class="logo">
+    <header> <!-- Header med logotyp och rubrik-->
+      <img src="images/Logo.jpg" alt="Nordvik Motors Logotyp" class="logo">
       <h1>Nordvik Motors</h1>
     </header>
 
-    <nav class="menu">  <!--Här anges menyn, man får välja bland start, bilar till salu och kontakt-->
+    <nav class="navMeny"> <!--Navigeringsmeny för interna länkar-->
       <a href="index.html">Start</a>
       <a href="objekt.html">Bilar till salu</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
 
-    <div class="layout">
-      <main class="main">
-        <div class="map-box">
+    <div>
+      <main class="menyn">
+        <div class="Kartbild">
           <iframe
             src="https://www.google.com/maps?q=Karlstad&output=embed"
             loading="lazy"
@@ -32,39 +31,39 @@
         </div>
           
 
-        <section class="filter-box"> <!--Det här är början av koden som visar olika fordon till salu. 
+        <section class="fordon"> <!--Det här är början av koden som visar olika fordon till salu. 
         Användaren får också tillgång till google maps på respektive fordon-->
           <h2 class="text1">Bilar till salu</h2>
         </section>
 
-        <div class="list"> <!--Första fordonet visas som en klickbar bild som tar användaren till objekssidan-->
-          <article class="card">
+        <div class="cards"> <!--Första fordonet visas som en klickbar bild som tar användaren till objekssidan-->
+          <article class="box">
             <img src="images/Volvo.jpg" alt="Bil 1" class="card-img">
             <div class="card-text">
               <h3><a href="objekt.html">Volvo XC60</a></h3>
               <strong>Volvo XC60 till salu</strong>
-              <p>Pris: 210 000 kr</p>
+              <p>Pris: 214 000 kr</p>
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
             </div>
           </article>
 
-          <article class="card">  <!--Andra fordonet visas som en klickbar bild som tar användaren till objekssidan-->
+          <article class="box">  <!--Andra fordonet visas som en klickbar bild som tar användaren till objekssidan-->
             <img src="images/Audi.jpg" alt="Bil 2" class="card-img">
             <div class="card-text">
               <h3><a href="objekt.html">Audi A4</a></h3>
               <strong>Audi A4 till salu</strong>
-              <p>Pris: 246 000 kr</p> 
+              <p>Pris: 234 000 kr</p> 
               
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
             </div>
           </article>
 
-          <article class="card"> <!--Tredje fordonet visas som en klickbar bild som tar användaren till objektssidan-->
+          <article class="box"> <!--Tredje fordonet visas som en klickbar bild som tar användaren till objektssidan-->
             <img src="images/BMW.jpg" alt="Bil 3" class="card-img">
             <div class="card-text">
               <h3><a href="objekt.html">BMW 320d</a></h3>
               <strong>BMW 320d till salu</strong>
-              <p>Pris: 234 000 kr</p>
+              <p>Pris: 226 000 kr</p>
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
             </div>
           </article>
@@ -72,24 +71,20 @@
       </main>
     
       
-        <aside class="sidebar">
+  <aside class="reklambilder">
+    <a class="Reklam" href="https://www.momondo.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
+      <div class="reklam">
+        <img src="images/SAS.jpg" alt="Flygresor">
+        <div class="text">Billiga flygresor</div>
+      </div>
+    </a>
 
-  <a class="ad" href="https://www.momondo.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
-    <div class="ad-box">
-      <img src="images/Momondo.png" alt="Flygresor">
-      <div class="ad-text">Billiga flygresor</div>
-    </div>
-  </a>
-
-  <a class="ad" href="https://www.kau.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
-    <div class="ad-box">
-      <img src="images/UNI.webp" alt="Karlstad universitet">
-      <div class="ad-text">Karlstad universitet</div>
-    </div>
-  </a>
-
-</aside>
-   
-</div>
+    <a class="Reklam" href="https://www.kau.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
+      <div class="reklam">
+        <img src="images/UNI.jpg" alt="Karlstad universitet">
+        <div class="text">Karlstad universitet</div>
+      </div>
+    </a>
+  </aside>
 </body>
 </html>
