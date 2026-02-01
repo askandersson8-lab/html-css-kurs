@@ -1,77 +1,93 @@
-<!DOCTYPE html>         <!--Grundstrukturen av koden och språket till hemsidan anges-->
+<!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>Volvo XC60 - Nordvik Motors</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <title>Nordvik Motors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="page">
+    <div class="header"> <!-- Header med logotyp och rubrik-->
 
-  <div class="header">    <!--Logotypen anges-->
-    <img src="images/bil1.jpg" alt="Nordvik Motors logotyp" class="logo">
-    <h2>Nordvik Motors</h2>
-  </div>
+        <img src="images/bil1.jpg" alt="Nordvik Motors Logotyp" class="logo">
+        <h1>Nordvik Motors</h1>
 
-  <nav class="menu">      <!--Här anges menyn, man får välja bland start, bilar till salu och kontakt-->
-    <a href="index.html">Start</a>
-    <a href="index.html">Bilar till salu</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-
-  <main class="feed">      <!--Beskrivning av första fordonet och hur mycket den är värd-->
-  <div class="car">
-    <div class="car__media">
-      <img src="images/Volvo.jpg" alt="Volvo XC60">
     </div>
 
-    <aside class="car__info">  
-      <h2>Volvo XC60</h2>
-      <ul>
-        <li>Årsmodell: 2019</li>
-        <li>Mil: 6 500</li>
-        <li>Bränsle: Diesel</li>
-        <li>Växellåda: Automat</li>
-      </ul>
-      <p class="price">Pris: 210 000 kr</p>
-    </aside>
-  </div>
+    <nav class="menu"> <!-- En meny där man kan navigera till de andra sidor-->
 
-  <div class="car">
-    <div class="car__media">
-      <img src="images/BMW.jpg" alt="BMW 320d">
-    </div>
+        <a href="index.html">Start</a>
+        <a href="index.html">Bilar till salu</a>
+        <a href="kontakt.html">Kontakt</a>
 
-    <aside class="car__info">      <!--Beskrivning av andra fordonet och hur mycket den är värd-->
-      <h2>BMW 320d</h2>
-      <ul>
-        <li>Årsmodell: 2018</li>
-        <li>Mil: 8 900</li>
-        <li>Bränsle: Diesel</li>
-        <li>Växellåda: Automat</li>
-      </ul>
-      <p class="price">Pris: 189 000 kr</p>
-    </aside>
-  </div>
+    </nav>
 
-  <div class="car">
-    <div class="car__media">
-      <img src="images/Audi.jpg" alt="Audi A4">
-    </div>
+    <main>
 
-    <aside class="car__info">        <!--Beskrivning av tredje fordonet och hur mycket den är värd-->
-      <h2>Audi A4</h2>
-      <ul>
-        <li>Årsmodell: 2020</li>
-        <li>Mil: 4 200</li>
-        <li>Bränsle: Bensin</li>
-        <li>Växellåda: Automat</li>
-      </ul>
-      <p class="price">Pris: 259 000 kr</p>
-    </aside>
-  </div>
+        <div class="car"> <!-- Bil 1-->
 
-</main>
+            <div class="car_img"> <!-- bild på bilen -->
+                <img src="images/Volvo.jpg" alt="Volvo XC60">
+            </div>
+
+            <aside class="car_info"> <!-- Information om bilen-->
+
+                <h2>Volvo XC60</h2>
+                <ul>
+                    <li>Årsmodell: 2019</li>
+                    <li>Mil: 6 500</li>
+                    <li>Bränsle: Diesel</li>
+                    <li>Växellåda: Automat</li>
+                </ul>
+                <h3>Pris: 210 000 kr</h3>
+
+            </aside>
+
+        </div>
+        <div class="car"> <!-- Bil 2-->
+
+            <div class="car_img">
+                <img src="images/BMW.jpg" alt="BMW 320d">
+            </div>
+
+            <aside class="car_info"> <!-- Information om bilen-->
+
+                <h2>BMW 320d</h2>
+                <ul>
+                    <li>Årsmodell: 2018</li>
+                    <li>Mil: 8 900</li>
+                    <li>Bränsle: Diesel</li>
+                    <li>Växellåda: Automat</li>
+                </ul>
+                <h3>Pris: 189 000 kr</h3>
+
+            </aside>
+
+        </div>
+
+        <div class="car"> <!-- Bil 3-->
+
+            <div class="car_img">
+                <img src="images/Audi.jpg" alt="Volvo XC60">
+            </div>
+
+            <aside class="car_info"> <!-- Information om bilen-->
+
+                <h2>Audi A4</h2>
+                <ul>
+                    <li>Årsmodell: 2020</li>
+                    <li>Mil: 4 200</li>
+                    <li>Bränsle: Diesel</li>
+                    <li>Växellåda: Automat</li>
+                </ul>
+                <h3>Pris: 259 000 kr</h3>
+
+            </aside>
+
+        </div>
+
+
+    </main>
+
 </body>
-
 </html>

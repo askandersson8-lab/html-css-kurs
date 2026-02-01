@@ -1,0 +1,57 @@
+.header
+{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-left: 100px;
+    padding-top: 10px;
+
+}
+.logo
+{
+    width: 70px;
+    height: auto;
+}
+body
+{
+    font-family: Arial, sans-serif;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
+    font-weight: bold;
+        
+    
+}
+.menu
+{
+    display: inline-flex;
+    gap: 18px;
+    background: #b34545;
+    margin-left: 100px;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    max-width: 1050px;
+    width: 100%;
+}
+.car
+{
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding-left: 150px;
+    margin-top: 25px;
+}
+.car_img img
+{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+.car_info
+{
+    padding-top: 20px;
+    padding-left: 15px;
+}
