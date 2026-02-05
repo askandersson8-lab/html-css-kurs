@@ -14,10 +14,19 @@
       <h1>Nordvik Motors</h1>
     </header>
 
-    <nav class="navMeny"> <!--Navigeringsmeny för interna länkar-->
-      <a href="index.html">Start</a>
-      <a href="objekt.html">Bilar till salu</a>
-      <a href="kontakt.html">Kontakt</a>
+    <nav class="navMeny" id="menu"> <!--Navigeringsmeny för interna länkar-->
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li>
+        <a class="bilMeny" href="objekt.html">Bilar till salu</a>
+        <ul class="dropdown">
+            <li><a href="#">Volvo XC60</a></li>
+            <li><a href="#">Audi A4</a></li>
+            <li><a href="#">BMW 320d</a></li>
+          </ul></li>
+          
+        <li><a href="kontakt.html">Kontakt</a> </li> 
+      </ul>
     </nav>
 
     <div class="layout">
