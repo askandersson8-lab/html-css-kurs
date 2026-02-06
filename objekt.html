@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Nordvik Motors</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="universal">
 
@@ -14,17 +14,24 @@
 
     </div>
 
-    <nav class="navMeny"> <!-- En meny där man kan navigera till de andra sidor-->
-
-        <a href="index.html">Start</a>
-        <a href="objekt.html">Bilar till salu</a>
-        <a href="kontakt.html">Kontakt</a>
-
+    <nav id="menu"> <!--Navigeringsmeny för interna länkar-->
+      <ul>
+        <li><a href="index.html">Start</a></li>
+        <li>
+        <a class="bilMeny" href="objekt.html">Bilar till salu</a>
+        <ul class="dropdown">
+            <li><a href="objekt.html#Volvo">Volvo XC60</a></li>
+            <li><a href="objekt.html#Audi">Audi A4</a></li>
+            <li><a href="objekt.html#BMW">BMW 320d</a></li>
+          </ul>
+        </li>  
+        <li><a href="kontakt.html">Kontakt</a> </li> 
+      </ul>
     </nav>
 
     <main class="frame">
 
-        <div class="car"> <!-- Bil 1-->
+        <div class="car" id="Volvo"> <!-- Bil 1-->
 
             <div class="car_img"> <!-- bild på bilen -->
                 <img src="images/Volvo.jpg" alt="Volvo XC60">
@@ -44,7 +51,7 @@
             </aside>
 
         </div>
-        <div class="car"> <!-- Bil 2-->
+        <div class="car" id="BMW"> <!-- Bil 2-->
 
             <div class="car_img">
                 <img src="images/BMW.jpg" alt="BMW 320d">
@@ -65,7 +72,7 @@
 
         </div>
 
-        <div class="car"> <!-- Bil 3-->
+        <div class="car" id="Audi"> <!-- Bil 3-->
 
             <div class="car_img">
                 <img src="images/Audi.jpg" alt="Volvo XC60">

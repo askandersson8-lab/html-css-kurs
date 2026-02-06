@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nordvik Motors</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="universal">
@@ -14,17 +14,17 @@
       <h1>Nordvik Motors</h1>
     </header>
 
-    <nav class="navMeny" id="menu"> <!--Navigeringsmeny för interna länkar-->
+    <nav id="menu"> <!--Navigeringsmeny för interna länkar-->
       <ul>
         <li><a href="index.html">Start</a></li>
         <li>
         <a class="bilMeny" href="objekt.html">Bilar till salu</a>
         <ul class="dropdown">
-            <li><a href="#">Volvo XC60</a></li>
-            <li><a href="#">Audi A4</a></li>
-            <li><a href="#">BMW 320d</a></li>
-          </ul></li>
-          
+            <li><a href="objekt.html#Volvo">Volvo XC60</a></li>
+            <li><a href="objekt.html#Audi">Audi A4</a></li>
+            <li><a href="objekt.html#BMW">BMW 320d</a></li>
+          </ul>
+        </li> 
         <li><a href="kontakt.html">Kontakt</a> </li> 
       </ul>
     </nav>
@@ -49,7 +49,7 @@
           <article class="box">
             <img src="images/Volvo.jpg" alt="Bil 1" class="card-img">
             <div class="card-text">
-              <h3><a href="objekt.html">Volvo XC60</a></h3>
+              <h3><a href="objekt.html#Volvo">Volvo XC60</a></h3>
               <strong>Volvo XC60 till salu</strong>
               <p>Pris: 214 000 kr</p>
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
@@ -59,7 +59,7 @@
           <article class="box">  <!--Andra fordonet visas som en klickbar bild som tar användaren till objekssidan-->
             <img src="images/Audi.jpg" alt="Bil 2" class="card-img">
             <div class="card-text">
-              <h3><a href="objekt.html">Audi A4</a></h3>
+              <h3><a href="objekt.html#Audi">Audi A4</a></h3>
               <strong>Audi A4 till salu</strong>
               <p>Pris: 234 000 kr</p> 
               
@@ -70,7 +70,7 @@
           <article class="box"> <!--Tredje fordonet visas som en klickbar bild som tar användaren till objektssidan-->
             <img src="images/BMW.jpg" alt="Bil 3" class="card-img">
             <div class="card-text">
-              <h3><a href="objekt.html">BMW 320d</a></h3>
+              <h3><a href="objekt.html#BMW">BMW 320d</a></h3>
               <strong>BMW 320d till salu</strong>
               <p>Pris: 226 000 kr</p>
               <a class="maplink" href="https://www.google.com/maps?q=Karlstad" target="_blank">Karta</a>
@@ -78,21 +78,17 @@
           </article>
         </div>
       </main>
-    
+    </div>
       
   <aside class="reklambilder">
-    <a class="Reklam" href="https://www.momondo.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
-      <div class="reklam">
+    <a class="reklam" href="https://www.momondo.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
         <img src="images/SAS.jpg" alt="Flygresor">
         <div class="text">Billiga flygresor</div>
-      </div>
     </a>
 
-    <a class="Reklam" href="https://www.kau.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
-      <div class="reklam">
+    <a class="reklam" href="https://www.kau.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
         <img src="images/UNI.jpg" alt="Karlstad universitet">
         <div class="text">Karlstad universitet</div>
-      </div>
     </a>
   </aside>
 </body>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="Kontakt" content="Information och metoder för at kontakta oss">
-        <link href="style.css" rel="stylesheet">
+        <link href="styles/style.css" rel="stylesheet">
         <title>Nordvik Motors - Kontakt</title>
     </head>
     <body class="universal"> <!--Hela sidokroppen. Klassen refererar till alla sidors universella fonts etc.-->
@@ -11,10 +11,19 @@
             <img src="images/Logo.jpg" alt="Nordvik Motors Logotyp" class="logo">
             <h1>Nordvik Motors</h1>
         </header>
-        <nav class="navMeny"> <!--Navigeringsmeny för interna länkar-->
-            <a href="index.html">Start</a>
-            <a href="objekt.html">Bilar till salu</a>
-            <a href="kontakt.html">Kontakt</a>
+        <nav id="menu"> <!--Navigeringsmeny för interna länkar-->
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li>
+                <a class="bilMeny" href="objekt.html">Bilar till salu</a>
+                <ul class="dropdown">
+                    <li><a href="objekt.html#Volvo">Volvo XC60</a></li>
+                    <li><a href="objekt.html#Audi">Audi A4</a></li>
+                    <li><a href="objekt.html#BMW">BMW 320d</a></li>
+                </ul>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a> </li> 
+            </ul>
         </nav>
         <div class="layout">
             <main>
@@ -29,40 +38,40 @@
                     <p><b>E-post:</b> <a href="mailto:info@nordvikmotors.se">info@nordvikmotors.se</a></p>
                 </div>
                 <div class="box"> <!--Tabell med öppettider-->
+                    <h2>Öppettider</h2>
                     <table class="kontaktTabell">
-                        <h2>Öppettider</h2>
-                            <tr>
-                                <th>Dag</th>
-                                <th>Öppettider</th>
-                            </tr>
-                            <tr>
-                                <td>Måndag</td>
-                                <td>10:00 - 18:00</td>
-                            </tr>
-                            <tr>
-                                <td>Tisdag</td>
-                                <td>10:00 - 18:00</td>
-                            </tr>
-                            <tr>
-                                <td>Onsdag</td>
-                                <td>10:00 - 18:00</td>
-                            </tr>
-                            <tr>
-                                <td>Torsdag</td>
-                                <td>10:00 - 18:00</td>
-                            </tr>
-                            <tr>
-                                <td>Fredag</td>
-                                <td>10:00 - 17:00</td>
-                            </tr>
-                            <tr>
-                                <td>Lördag</td>
-                                <td>11:00 - 14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Söndag</td>
-                                <td>Stängt</td>
-                            </tr>
+                        <tr>
+                            <th>Dag</th>
+                            <th>Öppettider</th>
+                        </tr>
+                        <tr>
+                            <td>Måndag</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Tisdag</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Onsdag</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Torsdag</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Fredag</td>
+                            <td>10:00 - 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Lördag</td>
+                            <td>11:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Söndag</td>
+                            <td>Stängt</td>
+                        </tr>
                     </table>
                 </div>
                 <div class="box"> <!--Formulärelement för att skicka ett meddelande till vår mail från vår hemsida (Informationen skickas ingenstans för tillfället)-->
@@ -90,7 +99,7 @@
                             <textarea rows="5" cols="50" id="meddelande" placeholder="Skriv in din text här..." required></textarea>
                         </div>
                         <div>
-                            <label for="Fråga">Är du medlem hos Nordvikmotors</label><br>
+                            <label>Är du medlem hos Nordvikmotors</label><br>
                         </div>
                         <div class="radioKnapp">
                             <div>   
@@ -121,18 +130,14 @@
                 </div>
             </main>
             <aside class="reklambilder">
-                <a class="Reklam" href="https://www.momondo.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
-                <div class="reklam">
+                <a class="reklam" href="https://www.momondo.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
                     <img src="images/SAS.jpg" alt="Flygresor">
                     <div class="text">Billiga flygresor</div>
-                </div>
                 </a>
 
-                <a class="Reklam" href="https://www.kau.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
-                <div class="reklam">
+                <a class="reklam" href="https://www.kau.se" target="_blank"> <!--En klickbar bild som tar användaren till en annan hemsida-->
                     <img src="images/UNI.jpg" alt="Karlstad universitet">
                     <div class="text">Karlstad universitet</div>
-                </div>
                 </a>
             </aside>
         </div>
